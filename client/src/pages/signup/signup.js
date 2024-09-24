@@ -1,24 +1,26 @@
-import "../../app/globals.css"
+import "../../app/globals.css";
 
 export default function SignUp() {
     return (
         <div className="flex h-screen">
-            <div className="flex-1 bg-gradient-to-r from-blue-800 via-blue-600 to-blue-400 text-white flex flex-col justify-center items-center text-center rounded-r-[50px] p-12">
-                <div className="mb-6">
-                    <h1 className="text-3xl font-bold">Welcome to</h1>
+            <div className="flex-1 bg-blue-600 text-white p-12 rounded-3xl m-2 flex flex-col justify-center items-center text-center">
+                <div className="mb-8">
+                    <h1 className="text-5xl font-bold">Welcome to</h1>
+                    <h2 className="text-4xl font-semibold mt-3">ICell Form Builder Web</h2>
                 </div>
-                <p>
-                    ICell Form Builder Web is your go-to solution for creating, managing, and deploying professional forms easily. Whether you're building a simple contact form or a complex survey, we've got the tools to help you succeed.
+             
+                <p className="max-w-xl text-lg mb-10">
+                    Your go-to solution for creating, managing, and deploying professional forms easily. Whether you're building a simple contact form or a complex survey, we've got the tools to help you succeed.
                 </p>
-
-                <div className='flex'>
-                    <button type="button" className="bg-white text-blue-800 border border-blue-800 px-4 py-2 rounded hover:bg-green-300 m-[15px]">Sign In</button>
-                    <button type="button" className="bg-white text-blue-800 border border-blue-800 px-4 py-2 rounded hover:bg-blue-100 m-[15px]">Sign up</button>
+                <div className="flex">
+                  
+                    <button type="button" className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg border-2 border-blue-600 hover:border-blue-800 hover:bg-blue-600 hover:text-white transition duration-300 m-[15px]">Login</button>
+                    <button type="button" className="bg-blue-500 text-white px-8 py-3 rounded-full text-lg border-2 border-blue-700 hover:border-white transition duration-300 m-[15px]">Sign Up</button>
                 </div>
             </div>
 
-            <div className="flex-1 bg-white p-12 overflow-y-auto rounded-l-[50px] ml-[5px]">
-                <h2 className="text-2xl font-bold mb-5 text-black">Create your account</h2>
+            <div className="flex-1 bg-white p-12 rounded-3xl m-2 overflow-y-auto">
+                <h2 className="text-2xl font-bold mb-5 text-blue-600">Create your account</h2>
                 <form>
                     {/* Input Group - First Name */}
                     <div className="mb-4">
@@ -27,7 +29,7 @@ export default function SignUp() {
                             type="text"
                             id="first-name"
                             placeholder="First Name"
-                            className="w-full p-3 border border-gray-300 rounded"
+                            className="w-full p-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-lg"
                         />
                     </div>
 
@@ -38,7 +40,7 @@ export default function SignUp() {
                             type="text"
                             id="last-name"
                             placeholder="Last Name"
-                            className="w-full p-3 border border-gray-300 rounded"
+                            className="w-full p-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-lg"
                         />
                     </div>
 
@@ -49,7 +51,7 @@ export default function SignUp() {
                             type="email"
                             id="email"
                             placeholder="Enter your email"
-                            className="w-full p-3 border border-gray-300 rounded"
+                            className="w-full p-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-lg"
                         />
                     </div>
 
@@ -60,7 +62,7 @@ export default function SignUp() {
                             type="password"
                             id="password"
                             placeholder="Enter your password"
-                            className="w-full p-3 border border-gray-300 rounded"
+                            className="w-full p-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-lg"
                         />
                     </div>
 
@@ -71,7 +73,7 @@ export default function SignUp() {
                             type="text"
                             id="contact"
                             placeholder="Enter your Contact Number"
-                            className="w-full p-3 border border-gray-300 rounded"
+                            className="w-full p-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-lg"
                         />
                     </div>
 
@@ -82,7 +84,7 @@ export default function SignUp() {
                             type="text"
                             id="club-name"
                             placeholder="Enter your Club / Committee Name"
-                            className="w-full p-3 border border-gray-300 rounded"
+                            className="w-full p-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-lg"
                         />
                     </div>
 
@@ -93,7 +95,7 @@ export default function SignUp() {
                             type="text"
                             id="position"
                             placeholder="Enter your Position"
-                            className="w-full p-3 border border-gray-300 rounded"
+                            className="w-full p-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-lg"
                         />
                     </div>
 
@@ -104,34 +106,35 @@ export default function SignUp() {
                             type="text"
                             id="security-key"
                             placeholder="Enter Security Key"
-                            className="w-full p-3 border border-gray-300 rounded"
+                            className="w-full p-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-lg"
                         />
                     </div>
+                    
 
                     <div className="flex justify-center mt-6 text-black">
                         <button
                             type="submit"
-                            className="w-[48%] bg-blue-800 text-white p-3 rounded hover:bg-blue-900">
+                            className="w-[48%] bg-blue-600 text-white p-3 rounded-full border-2 border-blue-600 hover:border-white active:bg-blue-700 active:scale-95 transition-all duration-300">
                             Sign Up
                         </button>
                     </div>
-
+               
                 </form>
+                
 
-
-                <div className="text-center mt-5 text-black">
+                <div className="text-center mt-8 text-blue-600">
                     <p>
                         Already have an account?{' '}
                         <button
                             type="button"
-                            className=" border text-blue-800  rounded hover:bg-green-800 hover:text-white">
-                            Sign In
+                            className="font-semibold underline hover:text-blue-800">
+                            Login
                         </button>
                     </p>
-                    <p>OR</p>
+                    <p className="mt-2">OR</p>
                     <p>If you have any problems, contact the technical team.</p>
                 </div>
-
+                
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 import "../../app/globals.css"
 
-export default function SignIn() {
+export default function Login() {
     return (
       <div className="flex h-screen">
         <div className="flex-1 bg-gradient-to-r from-blue-800 via-blue-600 to-blue-400 text-white flex flex-col justify-center items-center text-center rounded-r-[50px] p-12">
@@ -13,7 +13,7 @@ export default function SignIn() {
   
   
           <div className='flex'>
-            <button type="button" className="bg-white text-blue-800 border border-blue-800 px-4 py-2 rounded hover:bg-green-300 m-[15px]">Sign In</button>
+            <button type="button" className="bg-white text-blue-800 border border-blue-800 px-4 py-2 rounded hover:bg-green-300 m-[15px]">Login</button>
             <button type="button" className="bg-white text-blue-800 border border-blue-800 px-4 py-2 rounded hover:bg-blue-100 m-[15px]">Sign up</button>
           </div>
         </div>
@@ -21,30 +21,30 @@ export default function SignIn() {
   
   
         <div className="flex-1 bg-white p-12 overflow-y-auto rounded-l-[50px] ml-[10px]">
-          <h2 className="text-2xl font-bold mb-5 text-black">Sign in to your account</h2>
+          <h2 className="text-2xl font-bold mb-5 text-black">Login in to your account</h2>
           <form>
-            <div className="mb-4">
-              <label htmlFor="email" className="block font-bold mb-2 text-black">E-mail Address</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Enter your email"
-                className="w-full p-3 border border-gray-300 rounded"
-              />
-            </div>
+          <div className="mb-4">
+                        <label htmlFor="email" className="block font-bold mb-2 text-black">E-mail Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            className="w-full p-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-lg"
+                        />
+                    </div>
   
-            <div className="mb-4">
-              <label htmlFor="password" className="block font-bold mb-2 text-black">Password</label>
-              <input
-                type="password"
-                id="password"
-                placeholder="Enter your password"
-                className="w-full p-3 border border-gray-300 rounded"
-              />
-            </div>
+                    <div className="mb-4">
+                        <label htmlFor="password" className="block font-bold mb-2 text-black">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            className="w-full p-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-lg"
+                        />
+                    </div>
   
             <div className="flex justify-between mt-6 text-black" >
-              <button type="button" className="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-900">Sign In</button>
+              <button type="button" className="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-900">Login</button>
             </div>
           </form>
   
@@ -67,4 +67,3 @@ export default function SignIn() {
       </div >
     );
   }
-  
