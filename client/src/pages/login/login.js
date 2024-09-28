@@ -38,9 +38,6 @@ export default function Login() {
                 </p>
 
                 <div className='flex'>
-                    <Link href="/login/login" className="bg-white text-blue-800 border border-blue-800 px-4 py-2 rounded hover:bg-green-300 m-[15px]">
-                        Login
-                    </Link>
                     <Link href="/signup/signup" className="bg-white text-blue-800 border border-blue-800 px-4 py-2 rounded hover:bg-blue-100 m-[15px]">
                         Sign up
                     </Link>
@@ -48,7 +45,7 @@ export default function Login() {
             </div>
 
             <main className="flex-1 bg-white p-12 overflow-y-auto rounded-l-[50px] ml-[10px]">
-                <h2 className="text-2xl font-bold mb-5 text-blue-600">Login to Your Account</h2>
+                <h2 className="text-2xl font-bold mb-5 text-blue-600">Login to Your Account.</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label htmlFor="email" className="block font-bold mb-2 text-black">E-mail Address</label>
